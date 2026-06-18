@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みずチェッカー プライバシーポリシー</title>
+<style>
+  :root {
+    --ink: #1a2630;
+    --muted: #5b6b75;
+    --water: #1f7a8c;
+    --water-soft: #eef6f8;
+    --line: #e3e9ec;
+    --bg: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", Meiryo, sans-serif;
+    line-height: 1.85;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 24px 88px;
+  }
+  header {
+    border-bottom: 2px solid var(--water);
+    padding-bottom: 20px;
+    margin-bottom: 36px;
+  }
+  .app {
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    color: var(--water);
+    font-weight: 700;
+    margin: 0 0 6px;
+  }
+  h1 {
+    font-size: 26px;
+    margin: 0 0 10px;
+    letter-spacing: 0.01em;
+  }
+  .dates {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+  }
+  h2 {
+    font-size: 18px;
+    margin: 40px 0 10px;
+    padding-top: 4px;
+  }
+  p { margin: 0 0 14px; }
+  ul { margin: 0 0 14px; padding-left: 1.3em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--water); }
+  .lead { color: var(--muted); }
+  .callout {
+    background: var(--water-soft);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin: 18px 0 8px;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  .fill {
+    background: #fff7e6;
+    border: 1px dashed #e0b04a;
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-weight: 600;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="app">みずチェッカー</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="dates">施行日：2026年6月17日 ／ 最終更新日：2026年6月17日</p>
+  </header>
+
+  <p class="lead">みずチェッカー（以下「本アプリ」）を提供する ANDRØMEDA（以下「当方」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリが扱う情報と、扱わない情報について説明します。</p>
+
+  <h2>収集しない情報</h2>
+  <p>本アプリは、利用者を特定できる情報を一切収集しません。具体的には、以下を取得・保存しません。</p>
+  <div class="callout">
+    <p>氏名／メールアドレス／電話番号／住所／位置情報／IPアドレス／端末ID などの個人情報。</p>
+    <p>本アプリにアカウント登録やログイン入力の画面はなく、利用者がこれらを入力する必要はありません。</p>
+  </div>
+
+  <h2>カメラの利用について</h2>
+  <p>本アプリは、水のボトルのバーコード読み取りと、成分表の文字読み取り（OCR）のためにカメラを使用します。撮影した画像は<strong>すべて端末内でのみ処理</strong>され、外部のサーバーに送信・保存されることはありません。読み取り処理が終わると、画像は保存されず破棄されます。</p>
+
+  <h2>保存・共有されるデータ</h2>
+  <p>利用者が成分表を撮影して新しい水を判定したとき、その結果を他の利用者と共有するため、次の情報をデータベースに保存します。</p>
+  <ul>
+    <li>バーコード番号</li>
+    <li>硬度（数値）</li>
+    <li>カルシウム量・マグネシウム量（数値）</li>
+    <li>確定状態（暫定／確定）</li>
+    <li>保存日時</li>
+  </ul>
+  <p>これらは「商品（水）の情報」であり、<strong>誰が投稿したかは記録されません</strong>。保存されるデータは特定の個人と紐付きません。</p>
+
+  <h2>匿名認証について</h2>
+  <p>データベースへの書き込みを本アプリからの正規の利用に限定するため、Firebase の匿名認証を使用します。これは端末ごとにランダムな匿名ID（文字列）を自動的に発行する仕組みで、氏名・メールアドレス等は不要であり、取得もしません。利用者が何かを入力・登録する必要はありません。</p>
+
+  <h2>利用する外部サービス</h2>
+  <p>データの保存と匿名認証のために、Google が提供する Firebase（Realtime Database および Authentication）を利用しています。上記「保存・共有されるデータ」および匿名IDは、Google のサーバー上に保存されます。</p>
+  <p>また、本アプリが Firebase と通信する際、サービス提供に必要な技術的情報（接続時のIPアドレスなど）が Google 側で処理されることがあります。当方はこれらの情報を取得・保存・利用しません。Google のプライバシーポリシーは次をご覧ください：<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></p>
+
+  <h2>広告・分析ツールについて</h2>
+  <p>本アプリには広告は表示されません。アクセス解析、行動追跡、クラッシュ収集などのツールも一切使用していません。</p>
+
+  <h2>データの保存期間</h2>
+  <p>共有データベースに保存された水の情報は、他の利用者の判定に役立てるため継続して保存されます。これらは個人と紐付かないため、特定の個人を対象とした削除には対応できませんが、内容に誤りや問題があるデータの削除をご希望の場合は、下記の問い合わせ先までご連絡ください。</p>
+
+  <h2>お子様のプライバシー</h2>
+  <p>本アプリは個人情報を収集しないため、年齢を問わず安心してご利用いただけます。</p>
+
+  <h2>本ポリシーの変更</h2>
+  <p>本ポリシーは、法令の変更やアプリの仕様変更などに応じて改定することがあります。重要な変更がある場合は、本ページ上で告知します。</p>
+
+  <h2>お問い合わせ</h2>
+  <p>本ポリシーやデータの取り扱いに関するご質問・ご連絡は、下記までお願いいたします。</p>
+  <p>連絡先：<span class="fill">［ここに連絡先メールアドレスを記入してください］</span></p>
+
+  <footer>
+    ANDRØMEDA ／ みずチェッカー<br>
+    施行日：2026年6月17日
+  </footer>
+</div>
+</body>
+</html>
